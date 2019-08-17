@@ -17,6 +17,7 @@
 // }
 // getAPI()
 
+let store = []
 
 function getAPI() {
   let payload;
@@ -30,8 +31,11 @@ function getAPI() {
 }
 
 function showAPI(payload){
-  payload.map(user => console.log(user.name))
+  for(let i=0; i<payload.length; i++){
+    store.push(payload[i])
+  }
 }
+console.log(store)
 
 getAPI()
 
