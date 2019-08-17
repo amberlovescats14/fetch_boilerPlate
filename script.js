@@ -20,7 +20,6 @@
 let store = []
 
 function getAPI() {
-  let payload;
     fetch('https://jsonplaceholder.typicode.com/users')
      .then(res => res.json())
       .then(data => {
